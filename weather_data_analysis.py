@@ -1,12 +1,13 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns 
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error
+# Importing required libraries
+import pandas as pd                   # For data Manipulation and analysis
+import matplotlib.pyplot as plt       # For creating static Visualizations    
+import seaborn as sns                 # For statistical data visualization
+from sklearn.model_selection import train_test_split    # For splitting data into training and testing sets
+from sklearn.linear_model import LinearRegression       # For implementing linear regression
+from sklearn.metrics import mean_squared_error          # for calculating model performance
   
-
-df = pd.read_csv('weather.csv')
+# Loading the dataset
+df = pd.read_csv('weather.csv')  Reads the CSV file into pandas DataFrame
 
 
 print(df.head())
