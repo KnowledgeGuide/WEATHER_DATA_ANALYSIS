@@ -7,12 +7,12 @@ from sklearn.linear_model import LinearRegression       # For implementing linea
 from sklearn.metrics import mean_squared_error          # for calculating model performance
   
 # Loading the dataset
-df = pd.read_csv('weather.csv')  Reads the CSV file into pandas DataFrame
+df = pd.read_csv('weather.csv')  #Reads the CSV file into pandas DataFrame
 
-
-print(df.head())
-print(df.info())
-print(df.describe())
+# Initial data exploration
+print(df.head())                 # Dispaly first 5 rows of the dataset 
+print(df.info())                 # Shows information about the dataset including data types and non-null counts
+print(df.describe())             # Provides statistical summary of numerical columns
 
 
 sns.pairplot(df[['MinTemp', 'MaxTemp', 'Rainfall']])
